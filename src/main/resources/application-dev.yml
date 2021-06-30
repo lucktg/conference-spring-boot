@@ -1,0 +1,24 @@
+app:
+  conference:
+    version: 1.0.0
+login:
+  level:
+    org: DEBUG
+    com: DEBUG
+
+server:
+  port: 9001
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: demo
+    password: 1qaz2wsx
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+      jdbc:
+        lob:
+          non_contextual_creation: true
